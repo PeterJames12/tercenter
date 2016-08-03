@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="java-8-openjdk">
+    <CLASSES>
+      <root url="file:///usr/lib/jvm/java-8-openjdk" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

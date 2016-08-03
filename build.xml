@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="test">
+
+  <path id="common_library">
+    <pathelement location="/usr/tomcat/apache-tomcat-8.0.36/lib/servlet-api.jar"/>
+  </path>
+
+  <path id="mail_lib">
+    <pathelement location="javamail-1.4.4/mail.jar"/>
+  </path>
+
+
+  <target name="init">
+    <mkdir dir="/home/james/workspace/tryAgain/tryAgain/web/WEB-INF/classes"/>
+  </target>
+
+
+  <target name="clean">
+    <delete dir="/home/james/workspace/tryAgain/tryAgain/web/WEB-INF/classes"/>
+  </target>
+
+  <target name="compile" depends="clean,init">
+    <javac srcdir="src" destdir="web/WEB-INF/classes" failonerror="true" fork="true">
+      <classpath refid="common_library"/>
+        <classpath refid="mail_lib"/>
+    </javac>
+
+  </target>
+</project>

@@ -1,0 +1,6 @@
+Name and Surname = Alex Bob;
+Number of credit card = 2222 2222 2222 2222 ;
+CVV2 = 154;
+pass = qwerty123445;
+How much? = 200!
+------------------------

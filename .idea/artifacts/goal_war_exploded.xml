@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="goal:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/goal_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="goal/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="goal" />
+          <element id="library" level="project" name="java-8-openjdk" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/javamail-1.4.4/mail.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
